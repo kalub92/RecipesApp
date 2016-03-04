@@ -10,20 +10,24 @@
 		FC2B28501C8A461100D1A3B4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC2B284F1C8A461100D1A3B4 /* AppDelegate.swift */; };
 		FC2B28521C8A461100D1A3B4 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC2B28511C8A461100D1A3B4 /* ViewController.swift */; };
 		FC2B28551C8A461100D1A3B4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FC2B28531C8A461100D1A3B4 /* Main.storyboard */; };
-		FC2B28581C8A461100D1A3B4 /* Recipies.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = FC2B28561C8A461100D1A3B4 /* Recipies.xcdatamodeld */; };
+		FC2B28581C8A461100D1A3B4 /* Recipes.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = FC2B28561C8A461100D1A3B4 /* Recipes.xcdatamodeld */; };
 		FC2B285A1C8A461100D1A3B4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FC2B28591C8A461100D1A3B4 /* Assets.xcassets */; };
 		FC2B285D1C8A461100D1A3B4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FC2B285B1C8A461100D1A3B4 /* LaunchScreen.storyboard */; };
+		FC2B28691C8A509500D1A3B4 /* Recipe+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC2B28671C8A509500D1A3B4 /* Recipe+CoreDataProperties.swift */; };
+		FC2B286A1C8A509500D1A3B4 /* Recipe.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC2B28681C8A509500D1A3B4 /* Recipe.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		FC2B284C1C8A461100D1A3B4 /* Recipies.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Recipies.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		FC2B284C1C8A461100D1A3B4 /* Recipes.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Recipes.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FC2B284F1C8A461100D1A3B4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FC2B28511C8A461100D1A3B4 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		FC2B28541C8A461100D1A3B4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		FC2B28571C8A461100D1A3B4 /* Recipies.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Recipies.xcdatamodel; sourceTree = "<group>"; };
+		FC2B28571C8A461100D1A3B4 /* Recipes.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Recipes.xcdatamodel; sourceTree = "<group>"; };
 		FC2B28591C8A461100D1A3B4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FC2B285C1C8A461100D1A3B4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FC2B285E1C8A461100D1A3B4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FC2B28671C8A509500D1A3B4 /* Recipe+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "Recipe+CoreDataProperties.swift"; path = "../Recipe+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		FC2B28681C8A509500D1A3B4 /* Recipe.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Recipe.swift; path = ../Recipe.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -40,7 +44,7 @@
 		FC2B28431C8A461000D1A3B4 = {
 			isa = PBXGroup;
 			children = (
-				FC2B284E1C8A461100D1A3B4 /* Recipies */,
+				FC2B284E1C8A461100D1A3B4 /* Recipes */,
 				FC2B284D1C8A461100D1A3B4 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -48,31 +52,58 @@
 		FC2B284D1C8A461100D1A3B4 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				FC2B284C1C8A461100D1A3B4 /* Recipies.app */,
+				FC2B284C1C8A461100D1A3B4 /* Recipes.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		FC2B284E1C8A461100D1A3B4 /* Recipies */ = {
+		FC2B284E1C8A461100D1A3B4 /* Recipes */ = {
 			isa = PBXGroup;
 			children = (
+				FC2B28661C8A505700D1A3B4 /* Model */,
+				FC2B28651C8A505300D1A3B4 /* View */,
+				FC2B28641C8A504E00D1A3B4 /* Controller */,
 				FC2B284F1C8A461100D1A3B4 /* AppDelegate.swift */,
-				FC2B28511C8A461100D1A3B4 /* ViewController.swift */,
-				FC2B28531C8A461100D1A3B4 /* Main.storyboard */,
 				FC2B28591C8A461100D1A3B4 /* Assets.xcassets */,
-				FC2B285B1C8A461100D1A3B4 /* LaunchScreen.storyboard */,
 				FC2B285E1C8A461100D1A3B4 /* Info.plist */,
-				FC2B28561C8A461100D1A3B4 /* Recipies.xcdatamodeld */,
 			);
+			name = Recipes;
 			path = Recipies;
+			sourceTree = "<group>";
+		};
+		FC2B28641C8A504E00D1A3B4 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				FC2B28511C8A461100D1A3B4 /* ViewController.swift */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		FC2B28651C8A505300D1A3B4 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				FC2B285B1C8A461100D1A3B4 /* LaunchScreen.storyboard */,
+				FC2B28531C8A461100D1A3B4 /* Main.storyboard */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		FC2B28661C8A505700D1A3B4 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				FC2B28561C8A461100D1A3B4 /* Recipes.xcdatamodeld */,
+				FC2B28671C8A509500D1A3B4 /* Recipe+CoreDataProperties.swift */,
+				FC2B28681C8A509500D1A3B4 /* Recipe.swift */,
+			);
+			name = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		FC2B284B1C8A461000D1A3B4 /* Recipies */ = {
+		FC2B284B1C8A461000D1A3B4 /* Recipes */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = FC2B28611C8A461100D1A3B4 /* Build configuration list for PBXNativeTarget "Recipies" */;
+			buildConfigurationList = FC2B28611C8A461100D1A3B4 /* Build configuration list for PBXNativeTarget "Recipes" */;
 			buildPhases = (
 				FC2B28481C8A461000D1A3B4 /* Sources */,
 				FC2B28491C8A461000D1A3B4 /* Frameworks */,
@@ -82,9 +113,9 @@
 			);
 			dependencies = (
 			);
-			name = Recipies;
+			name = Recipes;
 			productName = Recipies;
-			productReference = FC2B284C1C8A461100D1A3B4 /* Recipies.app */;
+			productReference = FC2B284C1C8A461100D1A3B4 /* Recipes.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -103,7 +134,7 @@
 					};
 				};
 			};
-			buildConfigurationList = FC2B28471C8A461000D1A3B4 /* Build configuration list for PBXProject "Recipies" */;
+			buildConfigurationList = FC2B28471C8A461000D1A3B4 /* Build configuration list for PBXProject "Recipes" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -116,7 +147,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				FC2B284B1C8A461000D1A3B4 /* Recipies */,
+				FC2B284B1C8A461000D1A3B4 /* Recipes */,
 			);
 		};
 /* End PBXProject section */
@@ -140,8 +171,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				FC2B28521C8A461100D1A3B4 /* ViewController.swift in Sources */,
-				FC2B28581C8A461100D1A3B4 /* Recipies.xcdatamodeld in Sources */,
+				FC2B28691C8A509500D1A3B4 /* Recipe+CoreDataProperties.swift in Sources */,
+				FC2B28581C8A461100D1A3B4 /* Recipes.xcdatamodeld in Sources */,
 				FC2B28501C8A461100D1A3B4 /* AppDelegate.swift in Sources */,
+				FC2B286A1C8A509500D1A3B4 /* Recipe.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -255,7 +288,7 @@
 				INFOPLIST_FILE = Recipies/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.stultz.Recipies;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = Recipes;
 			};
 			name = Debug;
 		};
@@ -266,14 +299,14 @@
 				INFOPLIST_FILE = Recipies/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.stultz.Recipies;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = Recipes;
 			};
 			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		FC2B28471C8A461000D1A3B4 /* Build configuration list for PBXProject "Recipies" */ = {
+		FC2B28471C8A461000D1A3B4 /* Build configuration list for PBXProject "Recipes" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				FC2B285F1C8A461100D1A3B4 /* Debug */,
@@ -282,7 +315,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		FC2B28611C8A461100D1A3B4 /* Build configuration list for PBXNativeTarget "Recipies" */ = {
+		FC2B28611C8A461100D1A3B4 /* Build configuration list for PBXNativeTarget "Recipes" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				FC2B28621C8A461100D1A3B4 /* Debug */,
@@ -293,13 +326,13 @@
 /* End XCConfigurationList section */
 
 /* Begin XCVersionGroup section */
-		FC2B28561C8A461100D1A3B4 /* Recipies.xcdatamodeld */ = {
+		FC2B28561C8A461100D1A3B4 /* Recipes.xcdatamodeld */ = {
 			isa = XCVersionGroup;
 			children = (
-				FC2B28571C8A461100D1A3B4 /* Recipies.xcdatamodel */,
+				FC2B28571C8A461100D1A3B4 /* Recipes.xcdatamodel */,
 			);
-			currentVersion = FC2B28571C8A461100D1A3B4 /* Recipies.xcdatamodel */;
-			path = Recipies.xcdatamodeld;
+			currentVersion = FC2B28571C8A461100D1A3B4 /* Recipes.xcdatamodel */;
+			path = Recipes.xcdatamodeld;
 			sourceTree = "<group>";
 			versionGroupType = wrapper.xcdatamodel;
 		};

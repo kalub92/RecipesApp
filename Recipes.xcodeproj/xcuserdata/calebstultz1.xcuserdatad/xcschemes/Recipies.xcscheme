@@ -16,9 +16,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "FC2B284B1C8A461000D1A3B4"
-               BuildableName = "Recipies.app"
-               BlueprintName = "Recipies"
-               ReferencedContainer = "container:Recipies.xcodeproj">
+               BuildableName = "Recipes.app"
+               BlueprintName = "Recipes"
+               ReferencedContainer = "container:Recipes.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -34,9 +34,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "FC2B284B1C8A461000D1A3B4"
-            BuildableName = "Recipies.app"
-            BlueprintName = "Recipies"
-            ReferencedContainer = "container:Recipies.xcodeproj">
+            BuildableName = "Recipes.app"
+            BlueprintName = "Recipes"
+            ReferencedContainer = "container:Recipes.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
       <AdditionalOptions>
@@ -57,9 +57,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "FC2B284B1C8A461000D1A3B4"
-            BuildableName = "Recipies.app"
-            BlueprintName = "Recipies"
-            ReferencedContainer = "container:Recipies.xcodeproj">
+            BuildableName = "Recipes.app"
+            BlueprintName = "Recipes"
+            ReferencedContainer = "container:Recipes.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
       <AdditionalOptions>
@@ -76,9 +76,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "FC2B284B1C8A461000D1A3B4"
-            BuildableName = "Recipies.app"
-            BlueprintName = "Recipies"
-            ReferencedContainer = "container:Recipies.xcodeproj">
+            BuildableName = "Recipes.app"
+            BlueprintName = "Recipes"
+            ReferencedContainer = "container:Recipes.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>
