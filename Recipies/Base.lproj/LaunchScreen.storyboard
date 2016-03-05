@@ -5,7 +5,7 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10072.1"/>
     </dependencies>
     <customFonts key="customFonts">
-        <mutableArray key="Yellowtail-Regular.otf">
+        <mutableArray key="Yellowtail-Regular.ttf">
             <string>Yellowtail</string>
         </mutableArray>
     </customFonts>
@@ -25,13 +25,13 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="LsB-WC-T9s">
                                 <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Recipes" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="64" translatesAutoresizingMaskIntoConstraints="NO" id="QtJ-UE-Pn9">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Recipes" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QtJ-UE-Pn9">
                                         <rect key="frame" x="119" y="217" width="363" height="165"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="363" id="F5q-tD-qWh"/>
                                             <constraint firstAttribute="height" constant="165" id="w90-Xz-VKt"/>
                                         </constraints>
-                                        <fontDescription key="fontDescription" name="Yellowtail" family="Yellowtail" pointSize="100"/>
+                                        <fontDescription key="fontDescription" name="Yellowtail" family="Yellowtail" pointSize="60"/>
                                         <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <nil key="highlightedColor"/>
                                     </label>
