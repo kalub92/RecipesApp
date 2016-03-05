@@ -9,7 +9,7 @@
 import UIKit
 import CoreData
 
-class CreateRecipeVC: UIViewController, UIImagePickerControllerDelegate, UINavigationControllerDelegate {
+class CreateRecipeVC: UIViewController, UIImagePickerControllerDelegate, UINavigationControllerDelegate, UITextFieldDelegate {
 
     @IBOutlet weak var recipeTitle: UITextField!
     @IBOutlet weak var recipeIngredients: UITextField!
@@ -33,9 +33,16 @@ class CreateRecipeVC: UIViewController, UIImagePickerControllerDelegate, UINavig
         imagePicker.dismissViewControllerAnimated(true, completion: nil)
         recipeImg.image = image
     }
+    
+    func textFieldShouldReturn(textField: UITextField) -> Bool {
+        recipeSteps.resignFirstResponder()
+        return true
+}
+    
 
     @IBAction func addImage(sender: AnyObject!) {
         presentViewController(imagePicker, animated: true, completion: nil)
+        sender.setTitle("CHANGE IMAGE", forState: .Normal)
     }
     
     @IBAction func createRecipe(sender: AnyObject) {
@@ -61,6 +68,12 @@ class CreateRecipeVC: UIViewController, UIImagePickerControllerDelegate, UINavig
             self.navigationController?.popViewControllerAnimated(true)
         }
         
+    }
+    
+    @IBAction func dismissKeyboard(sender: AnyObject) {
+        recipeTitle.resignFirstResponder()
+        recipeIngredients.resignFirstResponder()
+        recipeSteps.resignFirstResponder()
     }
 
 }

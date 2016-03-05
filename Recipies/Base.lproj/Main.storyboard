@@ -100,28 +100,37 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Recipe Title" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="6rS-YE-9nJ">
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Recipe Title" textAlignment="center" minimumFontSize="17" clearButtonMode="unlessEditing" translatesAutoresizingMaskIntoConstraints="NO" id="6rS-YE-9nJ">
                                 <rect key="frame" x="20" y="84" width="560" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="words"/>
+                                <connections>
+                                    <outlet property="delegate" destination="U1S-oB-4a6" id="1pX-yl-ywK"/>
+                                </connections>
                             </textField>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Recipe Ingredients" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="2QK-Nd-bS8">
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Recipe Ingredients" textAlignment="center" minimumFontSize="17" clearButtonMode="unlessEditing" translatesAutoresizingMaskIntoConstraints="NO" id="2QK-Nd-bS8">
                                 <rect key="frame" x="20" y="129" width="560" height="90"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="90" id="ubn-xH-In2"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits" autocapitalizationType="words"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                <connections>
+                                    <outlet property="delegate" destination="U1S-oB-4a6" id="ZzP-kL-yMl"/>
+                                </connections>
                             </textField>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Recipe Steps" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="jkh-Oh-L8q">
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Recipe Steps" textAlignment="center" minimumFontSize="17" clearButtonMode="unlessEditing" translatesAutoresizingMaskIntoConstraints="NO" id="jkh-Oh-L8q">
                                 <rect key="frame" x="20" y="234" width="560" height="90"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="90" id="9nm-bc-dco"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences" returnKeyType="done" enablesReturnKeyAutomatically="YES"/>
+                                <connections>
+                                    <outlet property="delegate" destination="U1S-oB-4a6" id="khr-le-H2Y"/>
+                                </connections>
                             </textField>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="food" translatesAutoresizingMaskIntoConstraints="NO" id="wQw-G0-rHB">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="food" highlightedImage="addBtn" translatesAutoresizingMaskIntoConstraints="NO" id="wQw-G0-rHB">
                                 <rect key="frame" x="225" y="349" width="150" height="150"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="200" id="efH-lP-Wg1"/>
@@ -139,9 +148,10 @@
                             <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OHy-ob-fX5">
                                 <rect key="frame" x="225" y="349" width="150" height="150"/>
                                 <fontDescription key="fontDescription" name="AvenirNext-Bold" family="Avenir Next" pointSize="15"/>
-                                <size key="titleShadowOffset" width="1" height="1"/>
+                                <size key="titleShadowOffset" width="2.2250738585072014e-308" height="1"/>
                                 <state key="normal" title="+ ADD IMAGE">
                                     <color key="titleColor" red="0.98039215690000003" green="0.65490196079999996" blue="0.10980392160000001" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                                 <connections>
                                     <action selector="addImage:" destination="U1S-oB-4a6" eventType="touchUpInside" id="gzT-qV-tQl"/>
@@ -160,6 +170,7 @@
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <gestureRecognizers/>
                         <constraints>
                             <constraint firstItem="6rS-YE-9nJ" firstAttribute="trailing" secondItem="tQh-Lu-Qns" secondAttribute="trailingMargin" id="5sG-fm-gce"/>
                             <constraint firstItem="OHy-ob-fX5" firstAttribute="height" secondItem="wQw-G0-rHB" secondAttribute="height" id="822-Eb-fVW"/>
@@ -189,6 +200,9 @@
                                 <exclude reference="VQi-j9-UOA"/>
                             </mask>
                         </variation>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="rFL-kW-ywe" appends="YES" id="LoE-kF-GXb"/>
+                        </connections>
                     </view>
                     <connections>
                         <outlet property="recipeImg" destination="wQw-G0-rHB" id="zm9-HG-P0B"/>
@@ -198,6 +212,11 @@
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ZEM-HZ-IqH" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="rFL-kW-ywe">
+                    <connections>
+                        <action selector="dismissKeyboard:" destination="U1S-oB-4a6" id="qm7-G8-vjx"/>
+                    </connections>
+                </tapGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="1765" y="387"/>
         </scene>
@@ -212,13 +231,17 @@
                         <color key="barTintColor" red="0.98039215690000003" green="0.65490196079999996" blue="0.10980392160000001" alpha="1" colorSpace="calibratedRGB"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
+                    <toolbar key="toolbar" opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="6Aw-DE-DUC">
+                        <rect key="frame" x="0.0" y="556" width="600" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </toolbar>
                     <connections>
                         <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="1dc-Kv-Lug"/>
                     </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="poP-9r-S71" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="325" y="1047"/>
+            <point key="canvasLocation" x="479" y="1000"/>
         </scene>
     </scenes>
     <resources>
