@@ -15,6 +15,8 @@
 		FC2B285D1C8A461100D1A3B4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FC2B285B1C8A461100D1A3B4 /* LaunchScreen.storyboard */; };
 		FC2B28691C8A509500D1A3B4 /* Recipe+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC2B28671C8A509500D1A3B4 /* Recipe+CoreDataProperties.swift */; };
 		FC2B286A1C8A509500D1A3B4 /* Recipe.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC2B28681C8A509500D1A3B4 /* Recipe.swift */; };
+		FC41C3001C8A546C006FA653 /* RecipeCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC41C2FF1C8A546C006FA653 /* RecipeCell.swift */; };
+		FC41C3021C8A567C006FA653 /* Yellowtail-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = FC41C3011C8A567C006FA653 /* Yellowtail-Regular.otf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +30,8 @@
 		FC2B285E1C8A461100D1A3B4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FC2B28671C8A509500D1A3B4 /* Recipe+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "Recipe+CoreDataProperties.swift"; path = "../Recipe+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		FC2B28681C8A509500D1A3B4 /* Recipe.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Recipe.swift; path = ../Recipe.swift; sourceTree = "<group>"; };
+		FC41C2FF1C8A546C006FA653 /* RecipeCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RecipeCell.swift; sourceTree = "<group>"; };
+		FC41C3011C8A567C006FA653 /* Yellowtail-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Yellowtail-Regular.otf"; path = "Recipies/Yellowtail-Regular.otf"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -44,6 +48,7 @@
 		FC2B28431C8A461000D1A3B4 = {
 			isa = PBXGroup;
 			children = (
+				FC41C3011C8A567C006FA653 /* Yellowtail-Regular.otf */,
 				FC2B284E1C8A461100D1A3B4 /* Recipes */,
 				FC2B284D1C8A461100D1A3B4 /* Products */,
 			);
@@ -84,6 +89,7 @@
 			children = (
 				FC2B285B1C8A461100D1A3B4 /* LaunchScreen.storyboard */,
 				FC2B28531C8A461100D1A3B4 /* Main.storyboard */,
+				FC41C2FF1C8A546C006FA653 /* RecipeCell.swift */,
 			);
 			name = View;
 			sourceTree = "<group>";
@@ -159,6 +165,7 @@
 			files = (
 				FC2B285D1C8A461100D1A3B4 /* LaunchScreen.storyboard in Resources */,
 				FC2B285A1C8A461100D1A3B4 /* Assets.xcassets in Resources */,
+				FC41C3021C8A567C006FA653 /* Yellowtail-Regular.otf in Resources */,
 				FC2B28551C8A461100D1A3B4 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -173,6 +180,7 @@
 				FC2B28521C8A461100D1A3B4 /* ViewController.swift in Sources */,
 				FC2B28691C8A509500D1A3B4 /* Recipe+CoreDataProperties.swift in Sources */,
 				FC2B28581C8A461100D1A3B4 /* Recipes.xcdatamodeld in Sources */,
+				FC41C3001C8A546C006FA653 /* RecipeCell.swift in Sources */,
 				FC2B28501C8A461100D1A3B4 /* AppDelegate.swift in Sources */,
 				FC2B286A1C8A509500D1A3B4 /* Recipe.swift in Sources */,
 			);
@@ -322,6 +330,7 @@
 				FC2B28631C8A461100D1A3B4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
